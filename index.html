@@ -14,11 +14,13 @@
         <div class="leftSide">
             <h2 class="formHeader">Sign Up!</h2>
             <div class="formContentContainer">
-                <input type="text" name="firstName" class="formInput" placeholder="First Name" required />
-                <input type="text" name="lastName" class="formInput" placeholder="Last Name" required />
-                <input type="text" name="email" class="formInput" placeholder="Email" required />
-                <input type="text" name="phoneNumber" class="formInput" placeholder="Phone Number" required />
-                <input type="submit" class="submitButton" name="submitButton" value="Sign Up">
+                <form>
+                    <input type="text" name="firstName" class="formInput" placeholder="First Name" required/>
+                    <input type="text" name="lastName" class="formInput" placeholder="Last Name" required/>
+                    <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="formInput" placeholder="Email" required/>
+                    <input type="text" name="phoneNumber" onblur="phoneFormat(this.value)" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" class="formInput" placeholder="Phone Number" required maxlength="10" />
+                    <input type="submit" class="submitButton" name="submitButton" value="Sign Up">
+                </form>
             </div>
         </div>
         <div class="rightSide">
@@ -26,7 +28,7 @@
         </div>
         <div class="orCircle">or</div>
     </div>
-
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

@@ -1,27 +1,32 @@
-<!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sign Up Form</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <div class="formContainer">
-            <h1>Sign Up!</h1>
-                <label for="firstName">First Name</label>
-            <input type="text" name="Firstname" class="formInput" required/>
-                <label for="Lastname">Last Name</label>
-            <input type="text" name="Lastname" class="formInput" required/>
-                <label for="Email">Email</label>
-            <input type="text" name="Email" class="formInput" required/>
-                <label for="phoneNumber">Phone Number</label>
-            <input type="text" name="phoneNumber" class="formInput" required/>         
-            <input type="submit" name="submitButton" value="Sign Up">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Sign Up Form</title>
+</head>
+
+<body>
+    <div class="formContainer">
+        <div class="leftSide">
+            <h2 class="formHeader">Sign Up!</h2>
+            <div class="formContentContainer">
+                <input type="text" name="firstName" class="formInput" placeholder="First Name" required />
+                <input type="text" name="lastName" class="formInput" placeholder="Last Name" required />
+                <input type="text" name="email" class="formInput" placeholder="Email" required />
+                <input type="text" name="phoneNumber" class="formInput" placeholder="Phone Number" required />
+                <input type="submit" class="submitButton" name="submitButton" value="Sign Up">
+            </div>
         </div>
-        <script src="" async defer></script>
-    </body>
+        <div class="rightSide">
+
+        </div>
+        <div class="orCircle">or</div>
+    </div>
+
+</body>
+
 </html>
